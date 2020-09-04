@@ -8,7 +8,7 @@ The observation space consists of `33` variables  corresponding to position, rot
 ### Training the Agent 
 Before training the agent doesn't really know what's going on:
 
-![Agent Before](outputs/agent_before.GIF)
+![Agent Before](outputs/agent_before.gif)
 
 
 
