@@ -27,16 +27,17 @@ MAX_T = params.MAX_T
 """
 Create Environment
 """
-# env = UnityEnvironment(file_name='./reacher20/Reacher.exe', no_graphics=True)  # 20 agents
-env = UnityEnvironment(file_name='./reacher1/Reacher.exe', no_graphics=False)  # 1 agent
+# select how many agents to use
+env = UnityEnvironment(file_name='./reacher20/Reacher.exe', no_graphics=True)  # 20 agents
+#env = UnityEnvironment(file_name='./reacher1/Reacher.exe', no_graphics=False)  # 1 agent
 
 # get the default brain
 brain_name = env.brain_names[0]
 brain = env.brains[brain_name]
 
-# reset the environment
-# env_info = env.reset(train_mode=True)[brain_name]
-env_info = env.reset(train_mode=False, )[brain_name]
+# reset the environment, select if you want to train or not
+env_info = env.reset(train_mode=True)[brain_name]
+# env_info = env.reset(train_mode=False, )[brain_name]
 
 # number of agents
 num_agents = len(env_info.agents)

@@ -6,8 +6,8 @@ class Params:
 
         # Output folders
         self.WEIGHTS_FOLDER = "./outputs/"
-        self.CRITIC_WEIGHTS = torch.load(self.WEIGHTS_FOLDER + "checkpoint_critic67.pth")
-        self.ACTOR_WEIGHTS = torch.load(self.WEIGHTS_FOLDER + "checkpoint_actor67.pth")
+        self.CRITIC_WEIGHTS = None #torch.load(self.WEIGHTS_FOLDER + "checkpoint_critic67.pth")
+        self.ACTOR_WEIGHTS = None #torch.load(self.WEIGHTS_FOLDER + "checkpoint_actor67.pth")
 
         # Use GPU when available
         self.DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
